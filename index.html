@@ -1,51 +1,277 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Dark Neon</title>
-<link rel="stylesheet" href="style.css">
-<style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Glassmorphism</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="bg-blobs">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
 
-</style>
-</head>
-<body>
-<div class="container">
-<nav class="nav">
-<div class="logo"><span>▲</span> Portfolio</div>
-<div class="menu">
-<a href="#" class="active">Home</a><a href="#">Projects</a><a href="#">Resume</a><a href="#">Contact</a>
-</div>
-</nav>
-<section class="hero">
-<div>
-<div class="tag">Hello, I'm</div>
-<h1>Muhammad Rifky<span>Al Fajri</span></h1>
-<p>Beginner Programmer passionate about building modern, responsive, and user-friendly websites while continuously learning new technologies.</p>
-<a href="#" class="btn">Let's Talk</a>
-<div class="social"><div>in</div><div>ig</div><div>be</div></div>
-</div>
-<div class="photo-wrap">
-<div class="hex"><img src="image/foto1.jpeg"></div>
-</div>
-</section>
-<section class="section">
-<div class="title-small">My Services</div>
-<div class="title">What I Do</div>
-<div class="cards">
-<div class="card"><div class="icon">⌘</div><h3>UI/UX Designer</h3><p>Membuat tampilan website dan aplikasi yang modern, rapi, dan nyaman digunakan.</p></div>
-<div class="card"><div class="icon">◈</div><h3>Graphic Designer</h3><p>Desain branding, banner, sosial media, dan visual promosi profesional.</p></div>
-<div class="card"><div class="icon">▣</div><h3>Web Designer</h3><p>Landing page responsif dengan gaya premium dan performa cepat.</p></div>
-</div>
-</section>
-<section class="section">
-<div class="title-small">Recent Projects</div>
-<div class="title">Portfolio Works</div>
-<div class="projects">
-<div class="project"></div><div class="project"></div><div class="project"></div><div class="project"></div>
-</div>
-</section>
-<div class="footer">© 2026 Portfolio Website</div>
-</div>
-</body>
+    <nav>
+      <div class="nav-logo">Kenshikii.Dev</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <a href="#" class="nav-cta">Hire Me ✦</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-cards">
+        <div class="float-card">
+          <div class="fc-label">Projects Completed</div>
+          <div class="fc-val">3</div>
+        </div>
+        <div class="float-card">
+          <div class="fc-badge fc-green">● Available</div>
+        </div>
+        <div class="float-card">
+          <div class="fc-label">Client Rating</div>
+          <div class="fc-val">4.9 ★</div>
+        </div>
+        <div class="float-card">
+          <div class="fc-badge fc-purple">Full-Stack Developer</div>
+        </div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-pill">
+          <div class="pill-dot"></div>
+          Available for freelance work
+        </div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Front to Back</span><br />I Can Do it Well
+        </h1>
+        <p class="hero-sub">
+          Building fast, responsive, and user-focused web applications from
+          frontend to backend
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-glow">View My Work</a>
+          <a href="#" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-section">
+      <div class="stat-glass">
+        <div class="num">5+</div>
+        <div class="lbl">Years Experience</div>
+      </div>
+      <div class="stat-glass">
+        <div class="num">80+</div>
+        <div class="lbl">Projects Done</div>
+      </div>
+      <div class="stat-glass">
+        <div class="num">40+</div>
+        <div class="lbl">Happy Clients</div>
+      </div>
+      <div class="stat-glass">
+        <div class="num">4.9</div>
+        <div class="lbl">Average Rating</div>
+      </div>
+    </div>
+
+    <!-- WORKS -->
+    <section class="works-section">
+      <div class="section-eyebrow">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-text">Selected Work</span>
+      </div>
+      <h2 class="section-h">Featured Projects</h2>
+      <div class="works-grid">
+        <div class="work-card featured">
+          <div class="wc-image">
+            <div class="wc-image-inner grad1">
+              <div class="mock-screen">
+                <div class="ms-bar w70"></div>
+                <div class="ms-bar w50"></div>
+                <div class="ms-row">
+                  <div class="ms-box"></div>
+                  <div class="ms-box"></div>
+                </div>
+                <div class="ms-row">
+                  <div class="ms-box"></div>
+                  <div class="ms-box"></div>
+                  <div class="ms-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags">
+              <span class="wc-tag">UI / UX</span
+              ><span class="wc-tag">Dashboard</span>
+            </div>
+            <div class="wc-title">Fintech Analytics Platform</div>
+            <div class="wc-desc">
+              End-to-end redesign of a financial dashboard serving 50k+ users.
+              Increased engagement by 40%.
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="wc-image">
+            <div class="wc-image-inner grad2">
+              <div class="mock-screen">
+                <div class="ms-bar w70"></div>
+                <div class="ms-box" style="height: 80px; width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wc-tag">Branding</span></div>
+            <div class="wc-title">Brand Identity</div>
+            <div class="wc-desc">Visual identity for a SaaS startup.</div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="wc-image">
+            <div class="wc-image-inner grad3">
+              <div class="mock-screen">
+                <div class="ms-bar w50"></div>
+                <div class="ms-row">
+                  <div class="ms-box"></div>
+                  <div class="ms-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags"><span class="wc-tag">Mobile</span></div>
+            <div class="wc-title">Health App</div>
+            <div class="wc-desc">iOS/Android wellness tracking app.</div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="wc-image">
+            <div class="wc-image-inner grad4">
+              <div class="mock-screen">
+                <div class="ms-bar w70"></div>
+                <div class="ms-box" style="height: 60px; width: 100%"></div>
+                <div class="ms-bar w50"></div>
+              </div>
+            </div>
+          </div>
+          <div class="wc-body">
+            <div class="wc-tags">
+              <span class="wc-tag">Dev</span
+              ><span class="wc-tag">E-Commerce</span>
+            </div>
+            <div class="wc-title">Online Store</div>
+            <div class="wc-desc">
+              Full-stack retail platform with custom CMS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div class="about-glass">
+      <div>
+        <div class="avatar-glass"><img src="image/foto1.jpeg" alt=""></div>
+        <h2
+          style="
+            font-family: &quot;DM Serif Display&quot;, serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+          "
+        >
+          Kenshikii(Vi)
+        </h2>
+        <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem">
+          Full-Stack Developer · Sulawesi Barat
+        </p>
+        <p style="font-size: 0.9rem; line-height: 1.8; color: var(--muted)">
+          I transform complex problems into elegant, intuitive interfaces. With
+          a background in both design and code, I bridge the gap between
+          beautiful and functional.
+        </p>
+        <div class="skill-pills">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">TypeScript</span>
+          <span class="skill-pill">PHP</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">CSS</span>
+        </div>
+        <a href="#" class="btn-glow" style="display: inline-block"
+          >Download Resume</a
+        >
+      </div>
+      <div>
+        <h3
+          style="
+            font-family: &quot;DM Serif Display&quot;, serif;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+          "
+        >
+          Experience
+        </h3>
+        <div class="experience-list">
+          <div class="exp-item">
+            <div class="exp-icon c1">🎨</div>
+            <div>
+              <div class="exp-company">Tokopedia</div>
+              <div class="exp-role">Senior UI/UX Designer</div>
+              <div class="exp-period">2022 — Present</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-icon c2">💻</div>
+            <div>
+              <div class="exp-company">Gojek</div>
+              <div class="exp-role">Product Designer</div>
+              <div class="exp-period">2020 — 2022</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-icon c3">✦</div>
+            <div>
+              <div class="exp-company">Freelance</div>
+              <div class="exp-role">UI Designer</div>
+              <div class="exp-period">2019 — 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-name">Let's Work Together</div>
+      <p class="footer-sub">
+        Open to freelance projects and full-time opportunities
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">Dribbble</a>
+        <a href="#" class="social-btn">Behance</a>
+        <a href="#" class="social-btn">LinkedIn</a>
+        <a href="#" class="social-btn">GitHub</a>
+      </div>
+      <a
+        href="mailto:hello@nadia.dev"
+        class="btn-glow"
+        style="display: inline-block; margin-bottom: 3rem"
+        >hello@nadia.dev</a
+      >
+      <div class="footer-copy">© 2025 Nadia Putri — All rights reserved</div>
+    </footer>
+  </body>
 </html>
