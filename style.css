@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --nav-h: 58px;
+}
+
+body{
+    background-color: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+}
+
+
+.nav-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-brand {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.nav-link-fx {
+  position: relative;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav-link-fx::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  width: 0;
+  height: 2px;
+  background: #dc3545;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link-fx:hover::after,
+.nav-link-fx.active::after {
+  width: 60%;
+  left: 20%;
+}
+
+.nav-link-fx:hover,
+.nav-link-fx.active {
+  color: #fff;
+}
+
+.hero-bg {
+  min-height: calc(100vh - 57px);
+  min-height: calc(100svh - 57px);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(220, 53, 69, 0.35), transparent 60%),
+    #0a0a0a;
+}
+
+.hero-photo {
+  max-height: 120vh;
+}
+
+@media (min-width: 992px) {
+  .hero-photo {
+    max-height: none;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    transform: scale(1.2);
+    transform-origin: top center;
+  }
+}
+
+.hero-bigtext {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(4rem, 20vw, 20rem);
+  line-height: 1;
+  white-space: nowrap;
+  background: linear-gradient(180deg, #dc3545 25%, rgba(220, 53, 69, 0) 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
